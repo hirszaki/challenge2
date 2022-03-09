@@ -1,0 +1,207 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+
+h1 {
+    position: relative;
+    top:150px;
+    left:50px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    letter-spacing: 2px;
+}
+
+p {
+    position: relative;
+    top:200px;
+    left:50px;
+    width: 300px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: hsl(0, 0%, 95%); 
+}
+
+button {
+    position: inline;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+.wrapper {
+    margin: 200px auto;
+    min-width: 375px;
+    max-width: 1125px;
+}
+
+.box {
+    margin: 0 auto;
+    height: 600px;
+    width: 375px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    background-image: url("../img/icon-sedans.svg");
+    background-repeat: no-repeat;
+    background-position: 50px 70px;
+    background-size: 70px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.suv { 
+    background-color: hsl(184, 100%, 22%);
+    background-image: url("../img/icon-suvs.svg");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    background-size: 70px;
+}
+
+.luxury { 
+    background-color: hsl(179, 100%, 13%);
+    background-image: url("../img/icon-luxury.svg");
+    background-repeat: no-repeat;
+    background-position: 50px 50px;
+    background-size: 70px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.btn {
+    padding: 20px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+ .sedan .btn{
+    color: hsl(31, 77%, 52%);
+}
+
+.suv .btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (min-width:780px) and (max-width:1125px){
+    h1 {
+        left:30px;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    p {
+        left: 30px;
+        text-align: left;
+        font-size: 10px;
+        line-height: 20px;
+        width:200px
+    }
+
+    button {
+        display: block;
+        margin-top: 250px;
+        margin-left:30px;
+    }
+
+    .wrapper {
+        max-width: 1125px;
+        min-width: 780px;
+        text-align: center;
+        font-size: 0px;
+    }
+
+    .box {
+        display: inline-block;
+        height: 500px;
+        width: 250px;
+    }
+    .sedan {
+        background-position: 30px 50px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 25px;
+    }
+    .suv {
+        background-position: 30px 50px;
+    }
+
+    .luxury {
+        background-position: 30px 50px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 10px;
+    } 
+}
+
+@media (min-width:1125px) and (max-width:1440px){
+    
+    h1 {
+        left:30px;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    p {
+        left: 30px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
+        width:300px
+    }
+
+    button {
+        display: block;
+        margin-top: 250px;
+        margin-left:30px;
+    }
+
+    .wrapper {
+        min-width: 1125px;
+        max-width: 1440px;
+        font-size: 0px;
+        text-align: center;
+    }
+
+    .box {
+        display: inline-block;
+        height: 600px;
+        width: 375px;
+    }
+    .sedan {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 25px;
+    }
+
+    .luxury {
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 25px;
+    }  
+    .btn{
+        padding: 20px 40px;
+        border-radius: 10px;
+        font-size: 15px;
+    } 
+}
+
+
